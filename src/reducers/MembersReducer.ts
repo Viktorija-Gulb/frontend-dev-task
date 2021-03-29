@@ -1,4 +1,5 @@
-import { User, MembersDispatchTypes, MEMBERS_ERROR, MEMBERS_LOADING, MEMBERS_SUCCESS, ADD_NEW_USER } from "../actions/MembersActionTypes"
+import { User, MembersDispatchTypes, MEMBERS_ERROR, MEMBERS_LOADING, MEMBERS_SUCCESS, ADD_NEW_USER } from "../actions/MembersTypes"
+
 
 
 export interface InitialState {

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { Dispatch } from 'redux';
-import { MembersDispatchTypes, MEMBERS_LOADING, MEMBERS_SUCCESS, MEMBERS_ERROR } from './MembersActionTypes';
+import { MembersDispatchTypes, MEMBERS_LOADING, MEMBERS_SUCCESS, MEMBERS_ERROR } from './MembersTypes';
+
 
 
 export const getMembers = () => async (dispatch: Dispatch<MembersDispatchTypes>): Promise<any> => {

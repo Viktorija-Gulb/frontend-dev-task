@@ -3,7 +3,7 @@ import { makeStyles, Table, TableBody, TableCell, TableContainer, TableHead, Tab
 import EditIcon from '@material-ui/icons/Edit';
 import SortIcon from '@material-ui/icons/Sort';
 import ClearIcon from '@material-ui/icons/Clear';
-import { User } from '../actions/MembersActionTypes';
+import { User } from '../actions/MembersTypes';
 
 const useStyles = makeStyles((theme) => ({
   table: {},

@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ApplicationState } from '../reducers/RootReducer';
 import { Button, CircularProgress, makeStyles } from '@material-ui/core';
 import { getMembers } from '../actions/MembersActions';
-import { User } from '../actions/MembersActionTypes';
 import Logo from '../components/Logo';
 import FormDialog from '../components/FormDialog';
 import MainTable from '../components/MainTable';
 import Search from '../components/Search';
+import { User } from '../actions/MembersTypes';
 
 const useStyles = makeStyles((theme) => ({
   table: {

@@ -11,7 +11,7 @@ import {
   Theme
 } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
-import { User } from '../actions/MembersActionTypes';
+import { User } from '../actions/MembersTypes';
 
 const useStyles = makeStyles((theme: Theme) => ({
   button: {
