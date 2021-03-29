@@ -29,7 +29,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: 'Members',
-    to: '/members',
+    to: '/',
     pageTitle: 'Welcome'
   },
   {

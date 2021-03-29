@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ApplicationState } from '../reducers/RootReducer';
 import { Button, CircularProgress, makeStyles } from '@material-ui/core';
 import { getMembers } from '../actions/MembersActions';
-import { User } from '../actions/MembersactionTypes';
+import { User } from '../actions/MembersActionTypes';
 import Logo from '../components/Logo';
 import FormDialog from '../components/FormDialog';
 import MainTable from '../components/MainTable';
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0.5, 5),
     textTransform: 'initial',
     height: 30,
-    minWidth: 120
+    minWidth: 140
   },
 
   cellWithSort: {
@@ -78,11 +78,6 @@ const MembersPage: React.FC = () => {
     setUsersToShow(usersToShow.filter((x) => x.id !== id));
   };
 
-  const createNewUser = (data?: User) => {
-    setOpen(false);
-    setUser(undefined);
-  };
-
   const handleUserSubmit = (e: any) => {
     e.preventDefault();
     setOpen(false);
@@ -117,7 +112,7 @@ const MembersPage: React.FC = () => {
     });
   };
 
-  const handleSearchChange = (e: any) => {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { value } = e.target;
     setSearchValue(value);
   };
@@ -144,7 +139,6 @@ const MembersPage: React.FC = () => {
           open={open}
           onClose={handleClose}
           onCancel={handleClose}
-          handleSubmit={createNewUser}
           user={user}
           handleUserSubmit={handleUserSubmit}
         />

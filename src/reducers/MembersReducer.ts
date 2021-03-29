@@ -1,4 +1,5 @@
-import { ADD_NEW_USER, MembersDispatchTypes, MEMBERS_ERROR, MEMBERS_LOADING, MEMBERS_SUCCESS, User } from "../actions/MembersactionTypes";
+import { User, MembersDispatchTypes, MEMBERS_ERROR, MEMBERS_LOADING, MEMBERS_SUCCESS, ADD_NEW_USER } from "../actions/MembersActionTypes"
+
 
 export interface InitialState {
   loading: boolean;

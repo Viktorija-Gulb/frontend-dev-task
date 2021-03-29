@@ -44,7 +44,7 @@ interface Props {
   handleSearchChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
-const Search = ({ searchValue, handleSearchChange }: Props) => {
+const Search: React.FC<Props> = ({ searchValue, handleSearchChange }: Props) => {
   const classes = useStyles();
 
   return (

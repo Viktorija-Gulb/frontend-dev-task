@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <Header />
       <div className="page-container">
         <Switch>
-          <Route path="/members" exact component={MembersPage} />
+          <Route path="/" exact component={MembersPage} />
           <Route path="/about" exact component={About} />
           <Route path="/" render={() => <div>404</div>} />
         </Switch>

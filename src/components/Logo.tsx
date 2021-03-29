@@ -4,7 +4,7 @@ import { makeStyles, Typography } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   logo: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'center'
   },
 
   circle: {
@@ -12,11 +12,11 @@ const useStyles = makeStyles((theme) => ({
     width: 60,
     height: 60,
     borderRadius: '50%',
-    marginRight: 20,
-  },
+    marginRight: 20
+  }
 }));
 
-const Logo = () => {
+const Logo: React.FC = () => {
   const classes = useStyles();
   return (
     <div className={classes.logo}>
