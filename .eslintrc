@@ -15,12 +15,12 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    // "indent": ["error", 2],
-    // "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    // "semi": ["error", "always"],
+    "indent": ["error", 2],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "semi": ["error", "always"],
     "react/no-deprecated": ["error"],
     "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
-    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
-    // "no-console": ["error", { "allow": ["warn"] }]
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "no-console": ["error", { "allow": ["warn"] }]
   }
 }

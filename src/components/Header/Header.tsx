@@ -44,7 +44,7 @@ const Header: React.FC = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-    <div className="header">
+    <nav className="header">
       <div className="mobile-menu" onClick={handleClick}>
         {click ? <CloseMenu className="menu-icon" /> : <MenuIcon className="menu-icon" />}
       </div>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           </Link>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 

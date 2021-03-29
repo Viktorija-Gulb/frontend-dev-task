@@ -8,8 +8,8 @@
 
   .nav-options {
     .link {
-      margin-left: 20px;
-      font-size: 14px;
+      margin-left: 30px;
+      font-size: 16px;
       font-weight: 600;
       color: inherit;
     }
@@ -41,7 +41,7 @@
         margin-bottom: 10px;
       }
 
-      .active {
+      &.active {
         background: #fff;
         left: 0;
         opacity: 1;
